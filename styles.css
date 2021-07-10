@@ -1,0 +1,107 @@
+/* Box Model Fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500&display=swap');
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #FF7979;
+    font-family: 'Poppins', sans-serif;
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark_blue: hsl(249, 10%, 26%); 
+    --grayish_blue: hsl(246, 25%, 77%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 11.5vw;
+    gap: 70px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+    color: white;
+}
+
+h1+p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+}
+
+.try_it{
+    max-width:540px;
+    height: 60px;
+    background-color: var(--blue);
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+}
+
+form {
+    width: 45vw;
+    max-width: 540px;
+    height: 474px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+}
+
+form input{
+    max-width: 460px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 15px 32px;
+}
+
+form button {
+    max-width: 460px;
+    width: 100%;
+    height: 56px;
+    background: #38CC8B;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+form p{
+    font-size: 11px;
+    line-height: 26px;
+    color: var(--grayish_blue);
+}
+
+form p span{
+    color: var(--red);
+    font-weight: bold;
+}
