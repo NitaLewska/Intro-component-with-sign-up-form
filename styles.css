@@ -8,8 +8,6 @@ html {
     margin: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500&display=swap');
-
 body {
     background-image: url(images/bg-intro-desktop.png);
     background-color: #FF7979;
@@ -19,6 +17,7 @@ body {
     --blue: hsl(248, 32%, 49%);
     --dark_blue: hsl(249, 10%, 26%); 
     --grayish_blue: hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -55,6 +54,16 @@ h1+p {
     background-color: var(--blue);
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
     border-radius: 10px;
+    font-size: 15px;
+    line-height: 26px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: white;
+}
+
+.try_it span{
+    font-weight: 600;
 }
 
 form {
