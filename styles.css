@@ -99,7 +99,7 @@ form button {
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
     border-radius: 5px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
     color: white;
@@ -116,4 +116,23 @@ form p{
 form p span{
     color: var(--red);
     font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        flex-direction: column;
+        padding: 68px 24px;
+        height: auto;
+    }
+
+    section {
+        margin: 0 auto;
+        padding: 0;
+        
+    }
+
+    form {
+        width: 100%;
+        max-width: auto;
+    }
 }
