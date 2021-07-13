@@ -88,6 +88,7 @@ form input{
     border: 1px solid #DEDEDE;
     border-radius: 5px;
     padding: 15px 32px;
+    margin: 10px 0;
 }
 
 form button {
@@ -103,6 +104,8 @@ form button {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: white;
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 
 form p{
