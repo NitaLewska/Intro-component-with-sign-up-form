@@ -69,7 +69,7 @@ h1+p {
 form {
     width: 45vw;
     max-width: 540px;
-    height: 474px;
+    min-height: 474px;
     margin-top: 24px;
     display: flex;
     flex-direction: column;
@@ -89,6 +89,10 @@ form input{
     border-radius: 5px;
     padding: 15px 32px;
     margin: 10px 0;
+}
+
+form input:first-of-type {
+    margin-top:0;
 }
 
 form button {
@@ -123,16 +127,37 @@ form p span{
         flex-direction: column;
         padding: 68px 24px;
         height: auto;
+        gap:64px;
     }
 
     section {
         margin: 0 auto;
         padding: 0;
-        
+        text-align: center;
+    }
+
+    h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    h1+p{
+        font-size: 16px;
+        line-height: 26px;
     }
 
     form {
         width: 100%;
         max-width: auto;
+        padding: 24px;
+    }
+
+    .try_it {
+        padding: 18px 67px;
+        height: auto;
+    }
+
+    form input{
+        margin: 8px 0;
     }
 }
