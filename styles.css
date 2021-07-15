@@ -111,6 +111,11 @@ form button {
     margin-bottom: 8px;
 }
 
+form button:hover {
+    background: #77E2B3;
+    cursor: pointer;
+}
+
 form p{
     font-size: 11px;
     line-height: 26px;
@@ -120,6 +125,28 @@ form p{
 form p span{
     color: var(--red);
     font-weight: bold;
+}
+
+.errorMessage {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    color: var(--red);
+    align-self: flex-end;
+    font-style: italic;
+    margin-top:  -4px;
+}
+
+.hidden{
+    display: none;    
+}
+
+.error {
+    border: 2px solid red;
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right 27px bottom 50%;
+
 }
 
 @media screen and (max-width: 750px) {
